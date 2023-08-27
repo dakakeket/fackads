@@ -5,6 +5,7 @@
     background-color: #F2F5EE;
     margin: 0;
     font-family: 'Montserrat', Arial, sans-serif;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
@@ -64,7 +65,7 @@
     font-weight: 600;
 }
 
-.title_color_green {
+.title_color-green {
     color: #84B356;
 }
 
@@ -176,21 +177,100 @@
 
 .reviews {
     margin: 0;
-    padding: 7vh 13vw;;
-    background-color: #F2F5EE;
+    padding: 7vh 15vw;
     width: auto;
     height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F2F5EE;
 }
 
 .review-block {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.review-block__frame {
+    display: flex;
+    margin: 0;
+    background-color: #F2F5EE;
+    border: 3px solid #84B356;
+    border-radius: 50%;
+    min-width: 196px;
+    height: 196px;
+    justify-content: center;
+    align-items: center;
 }
 
 .review-block__pic {
-    border: 1px #84B356;
-    border-radius: 50%;
+    width: 179px;
+    height: 179px;
 }
+
+.review-block__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 415px;
+}
+
+.review-block__name {
+    margin: 0 0 20px 0;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #84B356;
+}
+
+.review-block__review {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #333333;
+    line-height: 95%;
+}
+
+.argumentation {
+    height: fit-content;
+    position: relative;
+}
+
+.back-image {
+    position: absolute;
+    bottom: 5%;
+    z-index: -50;
+}
+
+.arguments-block {
+    padding: 7vh 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_color-white {
+    color: white;
+    text-align: center;
+}
+
+.arguments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.argument-block {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
 
 @media screen and (min-width: 1920px) {
     .header {
