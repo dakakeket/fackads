@@ -152,7 +152,7 @@
     border-radius: 15px;
 }
 
-.lead__form-input:placeholder {
+.lead__form-input::placeholder {
     color: white;
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 1.4rem;
@@ -271,10 +271,10 @@
     border-radius: 30px;
     background-color: rgba(255,255,255, 0.5);
     padding: 30px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 15px 25px, rgba(0, 0, 0, 0.05) 0 5px 10px;
 }
 
-.argument-block:before {
+.argument-block::before {
     content: '';
     position: absolute;
     top: 0;
@@ -308,6 +308,102 @@
 .argument__description {
     font-weight: 500;
 }
+
+.feature {
+    margin: 0;
+    padding: 7vh 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.call {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #333333;
+}
+
+.call_green {
+    color: #84B356;
+}
+
+.feature-call {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feature__description-text {
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+}
+
+.description {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.description_bold {
+    font-weight: 600;
+}
+
+.exchange-rate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.exchange-rate__pack {
+    display: flex;
+    flex-direction: column;
+}
+
+.currency-rate__block {
+    background-color: #464646;
+    border-radius: 25px;
+    max-width: 387px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 30px;
+    justify-content: space-between;
+}
+
+.currency-name {
+    color: white;
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+.rate-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.currency-rate {
+    color: #84B356;
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+.currency-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #84B356;
+    border-radius: 50%;
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.9rem;
+    color: #333333;
+}
+
 
 @media screen and (min-width: 1920px) {
     .header {
@@ -352,5 +448,3 @@
         height: 70vh;
     }
 }
-
-7
