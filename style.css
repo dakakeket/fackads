@@ -1,8 +1,9 @@
 @import url(vendor/fonts/fonts.css);
 
 .page {
-    width: 100%;
+    width: auto;
     background-color: #F2F5EE;
+    border: 1px solid red;
     margin: 0;
     font-family: 'Montserrat', Arial, sans-serif;
     overflow-x: hidden;
@@ -178,18 +179,17 @@
 .reviews {
     margin: 0;
     padding: 7vh 15vw;
-    width: auto;
-    height: fit-content;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     background-color: #F2F5EE;
+    justify-content: space-between;
 }
 
 .review-block {
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
+    justify-content: flex-start;
+    margin: 0;
 }
 
 .review-block__frame {
@@ -198,7 +198,7 @@
     background-color: #F2F5EE;
     border: 3px solid #84B356;
     border-radius: 50%;
-    min-width: 196px;
+    width: 196px;
     height: 196px;
     justify-content: center;
     align-items: center;
@@ -214,7 +214,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 415px;
+    width: 400px;
+    margin: 0 0 0 20px;
 }
 
 .review-block__name {
@@ -226,7 +227,7 @@
 
 .review-block__review {
     margin: 0;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: #333333;
     line-height: 95%;
@@ -311,7 +312,7 @@
 
 .feature {
     margin: 0;
-    padding: 7vh 15vw;
+    padding: 5vh 15vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -319,7 +320,7 @@
 }
 
 .call {
-    margin: 0;
+    margin: 0 0 70px 0;
     font-size: 2.4rem;
     font-weight: 700;
     color: #333333;
@@ -339,6 +340,7 @@
     display: flex;
     flex-direction: column;
     width: 43%;
+    gap: 30px;
 }
 
 .description {
@@ -355,21 +357,25 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
 }
 
 .exchange-rate__pack {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 .currency-rate__block {
-    background-color: #464646;
+    background-color: rgba(70, 70, 70, 0.85);
     border-radius: 25px;
-    max-width: 387px;
+    width: 278px;
+    height: 48px;
     display: flex;
     flex-direction: row;
     padding: 20px 30px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .currency-name {
@@ -379,10 +385,10 @@
     font-size: 1.9rem;
 }
 
-.rate-button {
+.rate-block {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    gap: 15px;
 }
 
 .currency-rate {
@@ -402,6 +408,92 @@
     font-weight: 500;
     font-size: 1.9rem;
     color: #333333;
+    width: 38px;
+    height: auto;
+}
+
+.currency-button_purple {
+    background-color: #B79CFE;
+}
+
+.beginners-review {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7vh 0 5vh;
+}
+
+.message {
+    width: 100%;
+    height: fit-content;
+    background-color: #333333;
+    text-align: left;
+}
+
+.message__text {
+    margin: 4vh 12vw;
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 1em;
+    color: white;
+}
+
+.message__text_green {
+    margin: 5vh 0;
+    color: #84B356;
+}
+
+.beginners-review__block {
+    display: flex;
+    flex-direction: row;
+    padding: 7vh 0 0;
+    column-gap: 100px;
+}
+
+.review-block_column {
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-block__frame_bigger {
+    width: 250px;
+    height: 250px;
+}
+
+.review-block__pic_bigger {
+    width: 230px;
+    height: 230px;
+}
+
+.beginners-block__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+}
+
+.beginners-block__name {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.9rem;
+    color: #333333;
+}
+
+.beginners-block__income {
+    margin: 0;
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #333333;
+}
+
+.beginners-block__review {
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1em;
 }
 
 
@@ -419,6 +511,10 @@
         background-repeat: repeat;
         background-position: center;
     }*/
+}
+
+@media screen and (max-width: 1440px) {
+
 }
 
 @media screen and (max-width: 1024px) {
