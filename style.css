@@ -46,7 +46,7 @@
     /*grid-column-gap: 0 2rem;*/
     margin: 0;
     padding: 7vh 13vw;
-    background-image: url(images/lead_back.png);
+    background-image: url(images/lead_back.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -234,7 +234,7 @@
 
 .argumentation {
     margin: 0;
-    background-image: url(images/back.png);
+    background-image: url(images/back.webp);
     background-position: center -6vh;
     background-size: contain;
     background-repeat: no-repeat;
@@ -556,7 +556,7 @@
 .opinion {
     margin: 0;
     padding: 15vh 0 7vh;
-    background-image: linear-gradient(0deg, rgba(242,245,238,0.04310227508972342) 0%, rgba(242,245,238,1) 75%), url("images/lead_back.png");
+    background-image: linear-gradient(0deg, rgba(242,245,238,0.04310227508972342) 0%, rgba(242,245,238,1) 75%), url("images/lead_back.webp");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 130%;
