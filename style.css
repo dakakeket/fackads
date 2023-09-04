@@ -15,7 +15,7 @@
 }
 
 .page__container {
-    margin: auto;
+    margin: 0;
     font-size: 16px;
 }
 
@@ -139,8 +139,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 10%;
-    max-width: 500px;
-    width: 100%;
+    width: 93%;
     margin: 0;
     gap: 5px;
 }
@@ -207,7 +206,7 @@
 
 .review-block__pic {
     width: 179px;
-    height: 179px;
+    height: auto
 }
 
 .review-block__text {
@@ -256,7 +255,6 @@
 .arguments {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     column-gap: 6vw;
 }
 
@@ -394,7 +392,7 @@
 }
 
 .currency-rate {
-    color: #84B356;
+    color: #BEED8F;
     margin: 0;
     font-weight: 500;
     font-size: 1.9rem;
@@ -404,7 +402,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #84B356;
+    background-color: #BEED8F;
     border-radius: 50%;
     margin: 0;
     font-weight: 500;
@@ -756,6 +754,8 @@
             "icons"
             "form"
             "button";
+        place-items: center;
+        background-position: -20rem;
     }
 
     .lead__info-block {
@@ -774,7 +774,105 @@
         width: 70%;
         text-align: center;
     }
+
+    .lead__form-block {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .lead__form {
+        width: 80%;
+        padding-top: 8%;
+    }
+
+    .button {
+        margin-top: 50px;
+    }
+
+    .reviews {
+        padding: 5vh 15vw;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .review-block__frame {
+        width: 166px;
+        height: 166px;
+    }
+
+    .review-block__pic {
+        width: 149px;
+        height: auto;
+    }
+
+    .review-block__text {
+        width: 500px;
+    }
+
+    .argumentation {
+        background: linear-gradient(180deg, rgba(217,217,217,0) 0%, rgba(242,245,238,1) 55%), url(images/back.webp);
+        background-size: 300%;
+        background-position: center -5vh;
+        background-repeat: no-repeat;
+    }
+
+    .title_color-white {
+        width: 85%;
+        font-size: 4rem;
+    }
+
+    .title_color-green {
+        color: #84B356;
+    }
+
+    .arguments {
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    .argument-block {
+        width: 35rem;
+    }
+
+    .argument__title {
+        margin: 2rem 0;
+    }
+
+    .argument__description {
+        margin: 0 0 1rem 0;
+    }
+
+    .call {
+        display: none;
+    }
+
+    .feature-call {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .feature__description-text {
+        width: 77%;
+    }
+
+    .button_feature-off {
+        display: none;
+    }
+
+    .exchange-rate {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .currency-rate__block {
+        width: 480px;
+    }
 }
+
+
+
 
 @media screen and (max-width: 425px) {
     .header__link {
