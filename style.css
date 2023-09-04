@@ -63,6 +63,7 @@
     font-size: 5rem;
     line-height: 100%;
     font-weight: 600;
+    width: 95%;
 }
 
 .title_color-green {
@@ -73,6 +74,7 @@
     margin: 0 0 50px 0;
     font-size: 2.3rem;
     font-weight: 500;
+    width: 60%;
 }
 
 .button {
@@ -248,6 +250,7 @@
 .title_color-white {
     color: white;
     text-align: center;
+    width: 75%;
 }
 
 .arguments {
@@ -737,8 +740,39 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .lead {
+    .header__link {
+        justify-content: flex-start;
+    }
 
+    .header__logo-link {
+        width: 40%;
+    }
+
+    .lead {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "info"
+            "icons"
+            "form"
+            "button";
+    }
+
+    .lead__info-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        font-size: 6rem;
+    }
+
+    .subtitle {
+        width: 70%;
+        text-align: center;
     }
 }
 
