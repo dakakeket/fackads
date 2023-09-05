@@ -21,7 +21,7 @@
 
 .header {
     max-width: 100%;
-    padding: 28px 48px;
+    padding: 3vh 3vw;
     margin: auto;
     background-color: white;
 }
@@ -294,7 +294,7 @@
     align-items: center;
     width: 110px;
     height: 110px;
-    background-color: #333333;
+    background-color: #2F2F2F;
     border-radius: 13px;
 }
 
@@ -440,7 +440,7 @@
 }
 
 .message__text_green {
-    margin: 5vh 0;
+    margin: 0;
     color: #84B356;
 }
 
@@ -471,7 +471,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 370px;
+    width: 25rem;
 }
 
 .beginners-block__name {
@@ -738,15 +738,24 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 3vh 5vw;
+    }
+
     .header__link {
         justify-content: flex-start;
     }
 
     .header__logo-link {
-        width: 40%;
+        width: 60%;
     }
 
     .lead {
+        padding: 5vh 5vw;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr;
         grid-template-areas:
@@ -755,7 +764,7 @@
             "form"
             "button";
         place-items: center;
-        background-position: -20rem;
+        background-position: -25rem;
     }
 
     .lead__info-block {
@@ -765,14 +774,20 @@
     }
 
     .title {
-        width: 100%;
+        width: 93%;
         text-align: center;
-        font-size: 6rem;
+        font-size: 4rem;
+        margin: 0 0 25px 0;
     }
 
     .subtitle {
+        font-size: 2rem;
         width: 70%;
         text-align: center;
+    }
+
+    .lead__icon-block {
+        min-width: fit-content;
     }
 
     .lead__form-block {
@@ -781,16 +796,16 @@
     }
 
     .lead__form {
-        width: 80%;
+        width: 85%;
         padding-top: 8%;
     }
 
     .button {
-        margin-top: 50px;
+        margin-top: 25px;
     }
 
     .reviews {
-        padding: 5vh 15vw;
+        padding: 6vh 5vw;
         flex-direction: column;
         gap: 4rem;
         align-items: center;
@@ -807,12 +822,21 @@
     }
 
     .review-block__text {
-        width: 500px;
+        width: 420px;
+    }
+
+    .review-block__name {
+        font-size: 1.8rem;
+    }
+
+    .review-block__review {
+        font-size: 1.5rem;
     }
 
     .argumentation {
-        background: linear-gradient(180deg, rgba(217,217,217,0) 0%, rgba(242,245,238,1) 55%), url(images/back.webp);
-        background-size: 300%;
+        padding: 5vh 5vw;
+        background: linear-gradient(180deg, rgba(217,217,217,0) 0%, rgba(242,245,238,1) 80%), url(images/back.webp);
+        background-size: 550%;
         background-position: center -5vh;
         background-repeat: no-repeat;
     }
@@ -820,6 +844,7 @@
     .title_color-white {
         width: 85%;
         font-size: 4rem;
+        margin: 0 0 70px 0;
     }
 
     .title_color-green {
@@ -832,7 +857,13 @@
     }
 
     .argument-block {
-        width: 35rem;
+        width: 31rem;
+        height: 20rem;
+        background: linear-gradient(35deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.04310227508972342) 95%);
+    }
+
+    .argument__text {
+        font-size: 1.5rem;
     }
 
     .argument__title {
@@ -841,6 +872,10 @@
 
     .argument__description {
         margin: 0 0 1rem 0;
+    }
+
+    .feature {
+        padding: 7vh 5vw 5vh;
     }
 
     .call {
@@ -854,7 +889,7 @@
     }
 
     .feature__description-text {
-        width: 77%;
+        width: 80%;
     }
 
     .button_feature-off {
@@ -867,11 +902,46 @@
     }
 
     .currency-rate__block {
-        width: 480px;
+        width: 420px;
+        background-color: #2F2F2F;
     }
+
+    .currency-name {
+        margin-left: 2rem;
+    }
+
+    .message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .message__text {
+        margin: 5vh 0;
+        width: 80%;
+    }
+
+    .beginners-review__block {
+        flex-direction: column;
+        gap: 50px;
+        padding: 5vh 0 0;
+    }
+
+    .review-block__frame_bigger{
+        width: 400px;
+        height: 400px;
+    }
+
+    .review-block__pic_bigger {
+        width: 360px;
+        height: 360px;
+    }
+
+    .beginners-block__text {
+        width: 35rem;
+    }
+
 }
-
-
 
 
 @media screen and (max-width: 425px) {
@@ -884,9 +954,18 @@
     }
 
     .lead {
-        background-position-x: -120vw;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "info"
+            "icons"
+            "form"
+            "button";
+        place-items: center;
+        background-position: -20rem;
+        /*background-position-x: -120vw;
         background-size: auto;
-        height: 80vh;
+        height: 80vh;*/
     }
 }
 
