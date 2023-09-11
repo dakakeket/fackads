@@ -554,6 +554,10 @@
     display: none;
 }
 
+.crypto {
+    display: none;
+}
+
 .opinion {
     margin: 0;
     padding: 15vh 0 7vh;
@@ -569,6 +573,10 @@
 .call_add-style {
     text-align: center;
     padding: 0 21vw;
+}
+
+.call_add-color {
+    color: #333333;
 }
 
 .comments {
@@ -989,6 +997,10 @@
         font-size: 2.4rem;
     }
 
+    .call_add-color {
+        color: #84B356;
+    }
+
     .comments {
         padding: 0 7vw 4vh;
         margin: 0;
@@ -1037,7 +1049,7 @@
 @media screen and (max-width: 425px) {
 
     .header {
-        padding: 2vh 4vw;
+        padding: 3vh 4vw;
     }
 
     .header__link {
@@ -1050,7 +1062,7 @@
 
     .lead {
         background-position: -22rem;
-        padding: 4vh 5vw;
+        padding: 6vh 5vw;
     }
 
     .title {
@@ -1060,7 +1072,7 @@
     }
 
     .subtitle {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         width: 85%;
         margin: 0 0 40px 0;
     }
@@ -1111,22 +1123,23 @@
     }
 
     .reviews {
-        padding: 4vh 5vw;
-        gap: 1.4rem;
+        padding: 7vh 5vw;
+        gap: 2rem;
     }
 
     .review-block__frame {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     .review-block__pic {
-        width: 89px;
+        width: 69px;
         height: auto;
     }
 
     .review-block__text {
         width: 60vw;
+        margin: 0 0 0 15px;
     }
 
     .review-block__name {
@@ -1135,12 +1148,47 @@
     }
 
     .review-block__review {
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .argumentation {
+        padding: 6vh 5vw;
+        background: linear-gradient(180deg, rgba(217,217,217,0) 0%, rgba(242,245,238,1) 50%), url(images/back.webp);
+        background-size: 400%;
+        background-position: center -5vh;
+        background-repeat: no-repeat;
+    }
+
+    .title_color-white {
+        text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.57);
+    }
+
+    .arguments {
+        gap: 4vw;
+        padding-top: 40px;
     }
 
     .argument-block {
-        width: 17rem;
-        height: 15rem;
+        width: 18rem;
+        height: fit-content;
+        border-radius: 20px;
+        padding: 15px;
+        flex-wrap: nowrap;
+    }
+
+    .argument-block::before {
+        border-radius: 20px;
+    }
+
+    .argument__icon-block {
+        width: 65px;
+        height: 65px;
+        border-radius: 10px;
+    }
+
+    .argument__icon {
+        width: 45px;
+        height: auto;
     }
 
     .argument__text {
@@ -1148,7 +1196,7 @@
     }
 
     .argument__title {
-        margin: 2rem 0;
+        margin: 1.5rem 0;
     }
 
     .argument__description {
